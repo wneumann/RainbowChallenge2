@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="avH-Ks-IAh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Red-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RedViewController" customModule="RainbowChallenge2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,273 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bD-TK-4sV">
+                                <rect key="frame" x="142" y="238" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Mix with Blue"/>
+                                <connections>
+                                    <action selector="mixWithBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1f7-hR-5qb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJm-cx-IAo">
+                                <rect key="frame" x="135" y="308" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Mix with Yellow">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="mixWithYellow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VTa-OZ-Qyg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Red" id="4vz-UE-DMz"/>
+                    <connections>
+                        <segue destination="eCh-Ag-RgU" kind="show" identifier="RedToPurple" id="wZE-Wl-62a"/>
+                        <segue destination="ZlD-5e-gVy" kind="show" identifier="RedToOrange" id="LYw-6R-Xuf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1996" y="123"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="284-eC-Ph9">
+            <objects>
+                <viewController id="eCh-Ag-RgU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="au1-t7-gjC"/>
+                        <viewControllerLayoutGuide type="bottom" id="SJ5-l1-mdn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="03W-Jc-rou">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nfz-2T-cPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="996"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gEs-u5-zQM">
+            <objects>
+                <viewController id="ZlD-5e-gVy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VL1-iC-1DP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gre-yz-t4a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CRv-sI-g1I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00F-eV-nR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2849" y="995"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2J7-8I-Pq1">
+            <objects>
+                <viewController id="GMC-US-296" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cVe-BY-7xJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="vSk-lG-wNV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="omp-Hc-evv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LD6-Me-SHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3716" y="995"/>
+        </scene>
+        <!--Yellow-->
+        <scene sceneID="5NO-ep-bKT">
+            <objects>
+                <viewController id="nXj-OB-KMd" customClass="YellowViewController" customModule="RainbowChallenge2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="75w-yK-e7t"/>
+                        <viewControllerLayoutGuide type="bottom" id="98X-pC-5wz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sdk-rM-dbb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsY-PL-exF">
+                                <rect key="frame" x="142" y="233" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Mix with Blue"/>
+                                <connections>
+                                    <action selector="mixWithBlue:" destination="nXj-OB-KMd" eventType="touchUpInside" id="6to-6G-CAC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcK-Ca-73J">
+                                <rect key="frame" x="143" y="295" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Mix with Red">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="mixWithRed:" destination="nXj-OB-KMd" eventType="touchUpInside" id="xPd-f4-G3z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yellow" id="Rmt-lI-ZTS"/>
+                    <connections>
+                        <segue destination="ZlD-5e-gVy" kind="show" identifier="YellowToOrange" id="qTB-ef-prD"/>
+                        <segue destination="GMC-US-296" kind="show" identifier="YellowToGreen" id="cuH-RQ-ehr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSQ-tq-gHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2849" y="123"/>
+        </scene>
+        <!--Blue-->
+        <scene sceneID="ZQC-XS-kXH">
+            <objects>
+                <viewController id="ZCQ-dh-8UX" customClass="BlueViewController" customModule="RainbowChallenge2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LHb-bz-2tt"/>
+                        <viewControllerLayoutGuide type="bottom" id="aOV-7q-KBb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="En7-uc-u0l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHZ-tV-5Sd">
+                                <rect key="frame" x="143" y="230" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Mix with Red">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="mixWithRed:" destination="ZCQ-dh-8UX" eventType="touchUpInside" id="F8g-ZF-ia7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGH-bv-Dvk">
+                                <rect key="frame" x="135" y="292" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Mix with Yellow">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="mixWithYellow:" destination="ZCQ-dh-8UX" eventType="touchUpInside" id="nEk-0p-AM9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Blue" id="HKa-9W-mAG"/>
+                    <connections>
+                        <segue destination="eCh-Ag-RgU" kind="show" identifier="BlueToPurple" id="xEO-WG-NYd"/>
+                        <segue destination="GMC-US-296" kind="show" identifier="BlueToGreen" id="4OJ-tI-glc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMh-ap-jVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3716" y="123"/>
+        </scene>
+        <!--Red-->
+        <scene sceneID="QTO-jR-5rn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zsS-8o-HJa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Red" image="R" id="HTW-UD-34W"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oPV-1P-x4W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pd5-WT-h90"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9N8-xI-hm7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="-664.31784107946032"/>
+        </scene>
+        <!--Yellow-->
+        <scene sceneID="dLA-er-WWr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bzh-js-uJy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="Yellow" image="Y" selectedImage="Y Selected" id="ZWO-Hj-TW2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="77i-iA-pCs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nXj-OB-KMd" kind="relationship" relationship="rootViewController" id="YYe-pg-LEE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fg-n3-DP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2848.8000000000002" y="-664.31784107946032"/>
+        </scene>
+        <!--Blue-->
+        <scene sceneID="EUc-7z-gL0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Gq-NS-mOI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Blue" image="B" selectedImage="B Selected" id="y1K-uC-Mkd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Dt-dr-1ev">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZCQ-dh-8UX" kind="relationship" relationship="rootViewController" id="MlB-a9-6dc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lBn-Qo-fSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3716" y="-664.31784107946032"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ch4-59-Omt">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="avH-Ks-IAh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="217-RW-2Li">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zsS-8o-HJa" kind="relationship" relationship="viewControllers" id="29s-Ep-yEn"/>
+                        <segue destination="bzh-js-uJy" kind="relationship" relationship="viewControllers" id="JHs-lm-7Wb"/>
+                        <segue destination="3Gq-NS-mOI" kind="relationship" relationship="viewControllers" id="Bb4-Sz-cIh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tt-96-FhD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2849" y="-1557"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="B" width="28" height="28"/>
+        <image name="B Selected" width="28" height="28"/>
+        <image name="R" width="28" height="28"/>
+        <image name="Y" width="28" height="28"/>
+        <image name="Y Selected" width="28" height="28"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="cuH-RQ-ehr"/>
+        <segue reference="wZE-Wl-62a"/>
+        <segue reference="qTB-ef-prD"/>
+    </inferredMetricsTieBreakers>
 </document>
